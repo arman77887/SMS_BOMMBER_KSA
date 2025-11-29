@@ -208,8 +208,8 @@ class GlobalSMSBomber:
         name = country['name']
         
         if name == "Bangladesh":
-            if not phone.startswith(('01', '01')) or len(phone) != 11:
-                print(f"{Colors.RED}❌ Bangladeshi numbers must start with 01 and be 11 digits{Colors.END}")
+            if not phone.startswith(('1', '1')) or len(phone) != 11:
+                print(f"{Colors.RED}❌ Bangladeshi numbers must start with 1 and be 11 digits{Colors.END}")
                 return False
         elif name == "Saudi Arabia":
             if not phone.startswith('5') or len(phone) < 8 or len(phone) > 9:
